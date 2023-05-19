@@ -1,0 +1,36 @@
+\documentclass[a4paper, 12pt]{book}
+
+%% подключаем стандарт библиографии
+\bibliographystyle{gost71u} 
+
+%% for envirovemt "abstract" in class book
+\newenvironment{abstract}{}{}
+\usepackage{abstract}
+
+%% подключаем преамбулу, в ней содержатся подключение всех необходимых пакетов
+\input{include/preambule.tex}
+
+\begin{document}
+    %% титульник
+    \input{include/title.tex}
+    %% аннотоция
+    \input{parts/Annotation.tex}
+    %содержание
+    \tableofcontents{}
+    \newpage
+
+    \input{parts/Chapter0.tex} %% Введение
+    \input{parts/Chapter1.tex} %% Постановка задачи
+    \input{parts/Chapter2.tex} %% Обзор существующих решений
+    \input{parts/Chapter3.tex} %% Исследование и построение решения задачи
+    \input{parts/Chapter4.tex} %% Описание практической части
+    \input{parts/Chapter5.tex} %% Заключение
+
+    %% Don't change the following lines
+    \nocite{*}
+    \bibliography{references}
+
+    %% в зависимости от надобности подключаем раздел "Приложениие"
+    % \newpage
+    % \input{Appendix.tex}
+\end{document}
