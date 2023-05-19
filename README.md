@@ -14,7 +14,7 @@ sudo apt-get install texlive-latex-extra
 
 Скопируйте проект в рабочую директорию вашего ПК, используя команду
 ```
-git clone https://github.com/pavel-collab/Bachelor-Thesis-Template.git
+git clone https://github.com/hi-Landau/Bachelor-Thesis-Template.git
 ```
 
 Для сборки проекта в корневом каталоге лежит Makefile.
@@ -165,5 +165,4 @@ make clean
 
 ### Благодарности
 
-Благодарности автору на кофе и доширак вы можете перевести по номеру +79227928470.
-Ваши поощерения стимулируют автора к созданию еще большего количества полезных шаблонов! 
+Спасибо Павлу, чей код мы слегка доработали.
